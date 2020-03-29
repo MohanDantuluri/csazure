@@ -1,0 +1,77 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "ADF-CS"
+		},
+		"LS_SFTP_CS_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SFTP_CS'"
+		},
+		"LS_StorageAccount_CS_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_StorageAccount_CS'"
+		},
+		"LS_AKV_CS_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://AKV-CS.vault.azure.net/"
+		},
+		"LS_SFTP_CS_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "transfer.ispace.com"
+		},
+		"LS_SFTP_CS_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "app.adclient"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"LS_SFTP_CS_password": {
+						"value": "[parameters('LS_SFTP_CS_password')]"
+					},
+					"LS_StorageAccount_CS_connectionString": {
+						"value": "[parameters('LS_StorageAccount_CS_connectionString')]"
+					},
+					"LS_AKV_CS_properties_typeProperties_baseUrl": {
+						"value": "[parameters('LS_AKV_CS_properties_typeProperties_baseUrl')]"
+					},
+					"LS_SFTP_CS_properties_typeProperties_host": {
+						"value": "[parameters('LS_SFTP_CS_properties_typeProperties_host')]"
+					},
+					"LS_SFTP_CS_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SFTP_CS_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
