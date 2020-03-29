@@ -1,0 +1,863 @@
+{
+  "FieldSeprator": "FixedLength",
+  "Fileds": [
+    {
+      "FieldName": "INDIVIDUAL-ID-NUMBER",
+      "DataType": "String",
+      "Length": "20",
+      "IsRequired": "Yes"
+    },
+    {
+      "FieldName": "MEDICAID-ID-NUMBER",
+      "DataType": "String",
+      "Length": "25",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "SERVICING-PROV-NUMBER",
+      "DataType": "String",
+      "Length": "15",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "SERVICING-PROV-NPI",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CLAIM-TYPE",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CATEGORY-OF-SERVICE",
+      "DataType": "String",
+      "Length": "7",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "TYPE-OF-SERVICE",
+      "DataType": "String",
+      "Length": "6",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PLACE-OF-SERVICE",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "BILL-TYPE",
+      "DataType": "String",
+      "Length": "3",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "DRG-CODE",
+      "DataType": "String",
+      "Length": "6",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "LEVEL-OF-CARE-IND",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CLAIM-FORM-IND",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PAT-LAST-NAME",
+      "DataType": "String",
+      "Length": "60",
+      "IsRequired": "Yes"
+    },
+    {
+      "FieldName": "PAT-FIRST-NAME",
+      "DataType": "String",
+      "Length": "30",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PAT-MID-INIT",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PAT-SEX",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "Yes"
+    },
+    {
+      "FieldName": "PAT-DOB-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "Yes"
+    },
+    {
+      "FieldName": "TRANSACTION-TYPE",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "TRANSACTION-STATUS",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "DATE-OF-REMIT-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "REMIT-ID-NUMBER",
+      "DataType": "String",
+      "Length": "15",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "ADJUSTMENT-INDICATOR",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "ADJ-REASON",
+      "DataType": "String",
+      "Length": "9",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "TCN",
+      "DataType": "String",
+      "Length": "20",
+      "IsRequired": "Yes"
+    },
+    {
+      "FieldName": "FORMER-TCN",
+      "DataType": "String",
+      "Length": "20",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PRIMARY-DIAG",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "Yes"
+    },
+    {
+      "FieldName": "PRIMARY_DIAG_TYPE",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "Yes"
+    },
+    {
+      "FieldName": "SECONDARY-DIAG",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "SECONDARY-DIAG_TYPE",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "DX-3",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "DX-3_TYPE",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "DX-4",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "DX-4_TYPE",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "DX-5",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "DX-5_TYPE",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CLAIM-UNIT-VISTS-DAYS",
+      "DataType": "String",
+      "Length": "4",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CLAIM-FROM-DOS-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CLAIM -THRU-DOS-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "ADMIT-DATE-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "DISCHARGE-DATE-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "ELIG-INPAT-DAYS",
+      "DataType": "String",
+      "Length": "3",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "INELIG-INPAT-DAYS",
+      "DataType": "String",
+      "Length": "3",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "NATURE-HSP-ADMISSION",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PAT-STATUS-CODE",
+      "DataType": "String",
+      "Length": "9",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "TRAUMA-INDICATOR",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "TPL-ACCIDENT-INDICATOR",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PROVIDER-CLAIM-NUMBER",
+      "DataType": "String",
+      "Length": "25",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PROVIDER-TYPE",
+      "DataType": "String",
+      "Length": "15",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PROVIDER-SPECIALTY",
+      "DataType": "String",
+      "Length": "15",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PAY-TO-PROVIDER-NUMBER",
+      "DataType": "String",
+      "Length": "15",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PAY-TO-PROVIDER-NPI",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "REFERRING-PROVIDER-NUMBER",
+      "DataType": "String",
+      "Length": "15",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "REFERRING-PROVIDER-NPI",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "BILLED-AMOUNT-HEADER",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "BILLED-AMOUNT-NET-HEADER",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PAID-AMOUNT-HEADER",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PAID_DATE",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "DRG-ALLOWED-AMOUNT-HEADER",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "MEDICARE-ALLOWED-HEADER",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "MCOINSURANCE-AMOUNT-HEADER",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "MCDEDUCTIBLE-AMOUNT-HEADER",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "MCNONCOV-CHARGE-HEADER",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "MEDICARE-ATTACHMENT-ID",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "MEDICARE-BENEFITS-EXHAUSTED",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "OTP-COB-IND",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "OTHER-INS-PAID-HEADER",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "FAMILY-PLANNING-INDICATOR",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "STERILIZATION-INDICATOR",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "ABORTION-INDICATOR",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "HYSTERECTOMY-INDICATOR",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CLAIM-EMERGENCY-INDICATOR",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "APPLIED-INCOME",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "NUMBER-OF-LEAVE-DAYS",
+      "DataType": "String",
+      "Length": "3",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PER-DIEM-RATE-PAID",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "ADMITTING-DIAGNOSIS",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PRINCIPAL-PROCEDURE-CODE",
+      "DataType": "String",
+      "Length": "7",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PRINCIPAL-PROC-TYPE",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "SURGERY-DATE-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PRINCIPAL-PROCEDURE-CODE-2",
+      "DataType": "String",
+      "Length": "7",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PRINCIPAL-PROC-TYPE-2",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "SURGERY-DATE-2",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PRINCIPAL-PROCEDURE-CODE-3",
+      "DataType": "String",
+      "Length": "7",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PRINCIPAL-PROC-TYPE-3",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "SURGERY-DATE-3",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-CODE-1 ",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-AMOUNT-1",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-CODE-2  ",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-AMOUNT-2",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-CODE-3  ",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-AMOUNT-3",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-CODE-4  ",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-AMOUNT-4",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-CODE-5  ",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-AMOUNT-5",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-CODE-6",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "VALUE-AMOUNT-6",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CONDITION-CODE-1",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CONDITION-CODE-2",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CONDITION-CODE-3",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CONDITION-CODE-4",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CONDITION-CODE-5",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CONDITION-CODE-6",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CONDITION-CODE-7",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "OCCURENCE-SPAN-1 ",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "OCCUR-FROM-DATE-1-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "OCCUR-THRU-DATE-1-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "OCCURENCE-SPAN-2",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "OCCUR-FROM-DATE-2-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "OCCUR-THRU-DATE-2-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "SRC-LINE-ITEM-DTL-CNT",
+      "DataType": "String",
+      "Length": "4",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "LINE-ITEM-DTL-NBR",
+      "DataType": "String",
+      "Length": "4",
+      "IsRequired": "Yes"
+    },
+    {
+      "FieldName": "LINE-ITEM-FROM-DOS-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "Yes"
+    },
+    {
+      "FieldName": "LINE-ITEM-THRU-DOS-CCYYMMDD",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "Yes"
+    },
+    {
+      "FieldName": "REVENUE-CODE  ",
+      "DataType": "String",
+      "Length": "6",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CPT-4-PROCEDURE-CODE",
+      "DataType": "String",
+      "Length": "7",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CPT-4-PROC-MODIFIER-ONE",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "CPT-4-PROC-MODIFIER-TWO",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "LINE-ITEM-UNITS",
+      "DataType": "String",
+      "Length": "4",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "BILLED-AMOUNT-DETAIL",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "BILLED-AMOUNT-NET-DETAIL",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PAID-AMOUNT-DETAIL",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "MEDICARE-ALLOWED-DETAIL",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "MCDEDUCTIBLE-AMOUNT-DTL",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "MCOINSURANCE-AMOUNT-DTL",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "MCNONCOV-CHARGE-DTL",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "OTHER-INS-PAID-DETAIL",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "LINE_OF_BUSINESS",
+      "DataType": "String",
+      "Length": "30",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "PLAN",
+      "DataType": "String",
+      "Length": "16",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "ICDVERSIONINDICATOR",
+      "DataType": "String",
+      "Length": "1",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "NDC",
+      "DataType": "String",
+      "Length": "11",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "POA",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "Error Code",
+      "DataType": "String",
+      "Length": "15",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "Error Code Reason",
+      "DataType": "String",
+      "Length": "255",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "Tooth Number",
+      "DataType": "String",
+      "Length": "5",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "Tooth Surface",
+      "DataType": "String",
+      "Length": "5",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "Claim Adjustment Date",
+      "DataType": "String",
+      "Length": "8",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "Original Claim Id",
+      "DataType": "String",
+      "Length": "20",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "Line Status",
+      "DataType": "String",
+      "Length": "15",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "Patient Control Number",
+      "DataType": "String",
+      "Length": "40",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "Check Number",
+      "DataType": "String",
+      "Length": "30",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "FFS Withhold Amount",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "Interest Amount",
+      "DataType": "String",
+      "Length": "10",
+      "IsRequired": "No"
+    },
+    {
+      "FieldName": "State Code",
+      "DataType": "String",
+      "Length": "2",
+      "IsRequired": "No"
+    }
+  ]
+}
