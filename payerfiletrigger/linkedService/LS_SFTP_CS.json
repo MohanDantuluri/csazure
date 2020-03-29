@@ -1,0 +1,22 @@
+{
+	"name": "LS_SFTP_CS",
+	"properties": {
+		"annotations": [],
+		"type": "Sftp",
+		"typeProperties": {
+			"host": "transfer.ispace.com",
+			"port": 22,
+			"skipHostKeyValidation": true,
+			"authenticationType": "Basic",
+			"userName": "app.adclient",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_AKV_CS",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SFTPPassword"
+			}
+		}
+	}
+}
