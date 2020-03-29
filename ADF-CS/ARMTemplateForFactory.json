@@ -138,7 +138,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"container": "payerclaims"
+						"folderPath": "Payer1",
+						"container": "landingblob"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
