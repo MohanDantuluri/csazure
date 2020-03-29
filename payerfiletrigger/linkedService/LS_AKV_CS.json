@@ -1,0 +1,11 @@
+{
+	"name": "LS_AKV_CS",
+	"properties": {
+		"description": "Linked Service for Azure Key Vault",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://AKV-CS.vault.azure.net/"
+		}
+	}
+}

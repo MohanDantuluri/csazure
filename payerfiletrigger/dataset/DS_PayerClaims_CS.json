@@ -1,0 +1,21 @@
+{
+	"name": "DS_PayerClaims_CS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SFTP_CS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "SftpLocation",
+				"folderPath": "/CSPayerFile/Inbound"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

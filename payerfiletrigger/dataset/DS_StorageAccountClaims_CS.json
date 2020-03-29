@@ -1,0 +1,21 @@
+{
+	"name": "DS_StorageAccountClaims_CS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_StorageAccount_CS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "payerclaims"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
